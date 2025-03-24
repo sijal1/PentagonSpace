@@ -1,0 +1,9 @@
+git status
+
+-git add .
+or
+-git add class1/fan.py
+
+git commit -m "Updated programs for today"
+
+git push origin main
