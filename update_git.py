@@ -1,13 +1,14 @@
+"""
+Git Auto Commit and Push Script
+"""
+
 import os
 import subprocess
 
-# Set your project directory
-repo_path = r"D:\pentagonspace"
+REPO_PATH = r"D:\pentagonspace"
 
-# Change to the repository directory
-os.chdir(repo_path)
+os.chdir(REPO_PATH)
 
-# Run Git commands
 try:
     subprocess.run(["git", "add", "."], check=True)
     subprocess.run(["git", "commit", "-m", "Daily update"], check=True)
