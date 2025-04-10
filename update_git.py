@@ -1,7 +1,3 @@
-"""
-Git Auto Commit and Push Script
-"""
-
 import os
 import subprocess
 
