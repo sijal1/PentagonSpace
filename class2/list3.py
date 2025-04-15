@@ -15,7 +15,7 @@ def reverse(n):
 n=int(input("enter n : "))
 a=[]
 print("enter the numbers : ")
-a=[int(input()) for i in range(n)]
+a=[int(input()) for i in range(n)]                                                             
 print("")
 for i in a :
     reverse(i)    

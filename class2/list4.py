@@ -7,4 +7,5 @@ print("")
 sum=0
 for i in a :
     sum=sum+i
+print("sum of all elements in list")    
 print(sum)
