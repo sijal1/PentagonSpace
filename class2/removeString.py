@@ -4,6 +4,7 @@ for i in a:
      x.append(i)
 
 s=input("enter the character to remove : ")
+
 """for i in x:
      if i == s :
           x.remove(i) """
