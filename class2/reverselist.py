@@ -12,3 +12,10 @@ while i<j:
     i+=1
     j-=1
 print(a)
+
+# mehod 2
+L=[1,2,3,4]
+L1=[]
+for i in L:
+    L1.insert(0,i)
+print(L1)    
