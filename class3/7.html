@@ -1,128 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Registration Form</title>
+    <title>Document</title>
 </head>
 <body>
-    <form>
-        <table border="1">
+<form >
+    <fieldset>
+        <label for="firstname">First Name: </label>
+        <input name="firstname" type="text" id="firstname" > (max 20 char a-z and A-Z)
+        <br><br>
+
+        <label for="lastname">Last Name: </label>
+        <input name="lastname" type="text" id="lastname" > (max 20 char a-z and A-Z)
+        <br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob">
+        <br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label for="email">Email ID: </label>
+        <input name="email" type="email" id="email">
+        <br><br>
+
+        <label for="mobile">Mobile No: </label>
+        <input type="tel" id="mobile">
+        <br><br>
+
+        <label for="address">Address: </label><br>
+        <textarea id="address" ></textarea>
+        <br><br>
+
+        <label for="city">City: </label>
+        <input type="text" id="city">
+        <br><br>
+
+        <label for="pincode">Pincode: </label>
+        <input type="text" id="pincode" > 
+        <br><br>
+
+        <label for="email2">Email ID: </label>
+        <input type="email" id="email2">
+        <br><br>
+
+        <label for="state">State: </label>
+        <input type="text" id="state">
+        <br><br>
+
+        <label for="country">Country: </label>
+        <input type="text" id="country">
+        <br><br>
+
+        <label>Hobbies: </label><br>
+        <input type="checkbox" name="hobby" value="Drawing"> Drawing
+        <input type="checkbox" name="hobby" value="Singing"> Singing
+        <input type="checkbox" name="hobby" value="Dancing"> Dancing
+        <br><br>
+        <input type="checkbox" name="hobby" value="Other"> Other 
+        <input type="text"><br><br>
+
+        <label>Qualification:</label><br>
+        <table cellpadding="5" cellspacing="0">
             <tr>
-                <td>FullName</td>
-                <td><input type="text" maxlength="20" pattern="[A-Za-z]{1,20}" /> (max 20 char a-z and A-Z)</td>
+                <th>Sl.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Pass</th>
             </tr>
             <tr>
-                <td>Lastname</td>
-                <td><input type="text" maxlength="20" pattern="[A-Za-z]{1,20}" /> (max 20 char a-z and A-Z)</td>
+                <td>01</td>
+                <td><input type="text" name="exam1"></td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percent1"></td>
+                <td><input type="text" name="year1"></td>
             </tr>
             <tr>
-                <td>Date of Birth</td>
-                <td>
-                    <select>
-                        <option>1</option>
-                        <option>2</option>
-                        <!-- Add up to 31 -->
-                    </select>
-                    <select>
-                        <option>January</option>
-                        <option>February</option>
-                        <!-- Add all months -->
-                    </select>
-                    <select>
-                        <option>2022</option>
-                        <!-- Add other years if needed -->
-                    </select>
-                </td>
+                <td>02</td>
+                <td><input type="text" name="exam2"></td>
+                <td><input type="text" name="board2"></td>
+                <td><input type="text" name="percent2"></td>
+                <td><input type="text" name="year2"></td>
             </tr>
             <tr>
-                <td>GENDER</td>
-                <td>
-                    <input type="radio" name="gender" value="male" /> male
-                    <input type="radio" name="gender" value="female" /> female
-                </td>
+                <td>03</td>
+                <td><input type="text" name="exam3"></td>
+                <td><input type="text" name="board3"></td>
+                <td><input type="text" name="percent3"></td>
+                <td><input type="text" name="year3"></td>
             </tr>
             <tr>
-                <td>EMAIL ID</td>
-                <td><input type="email" /></td>
-            </tr>
-            <tr>
-                <td>MOBILE NO</td>
-                <td><input type="tel" /></td>
-            </tr>
-            <tr>
-                <td>ADDRESS</td>
-                <td><textarea rows="5" cols="40"></textarea></td>
-            </tr>
-            <tr>
-                <td>CITY</td>
-                <td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>PINCODE</td>
-                <td><input type="text" maxlength="6" pattern="\d{6}" /> (6 digit number)</td>
-            </tr>
-            <tr>
-                <td>EMAIL ID</td>
-                <td><input type="email" /></td>
-            </tr>
-            <tr>
-                <td>STATE</td>
-                <td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>COUNTRY</td>
-                <td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>HOBBIES</td>
-                <td>
-                    <input type="checkbox" />Drawing
-                    <input type="checkbox" />Singing
-                    <input type="checkbox" />Dancing
-                    <input type="checkbox" />Other <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td>Qualification</td>
-                <td>
-                    <table>
-                        <tr>
-                            <th>sl.no</th>
-                            <th>Examination</th>
-                            <th>Board</th>
-                            <th>Percentage</th>
-                            <th>Year of pass</th>
-                        </tr>
-                        <tr>
-                            <td>01</td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>02</td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>03</td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>04</td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>COURSES APPLIED FOR</td>
-                <td>
-                    <input type="checkbox" />BCA
-                    <input type="checkbox" />B.Com
-                    <input type="checkbox" />B.Sc
-                    <input type="checkbox" />B.A
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="submit" />
-                    <input type="reset" value="reset" />
-                </td>
+                <td>04</td>
+                <td><input type="text" name="exam4"></td>
+                <td><input type="text" name="board4"></td>
+                <td><input type="text" name="percent4"></td>
+                <td><input type="text" name="year4"></td>
             </tr>
         </table>
-    </form>
+        <br>
+        
+
+        <label>Courses Applied For: </label><br>
+        <input type="checkbox" name="course" value="BCA"> BCA
+        <input type="checkbox" name="course" value="B.Com"> B.Com
+        <input type="checkbox" name="course" value="B.Sc"> B.Sc
+        <input type="checkbox" name="course" value="B.A"> B.A
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+</form>
 </body>
 </html>
