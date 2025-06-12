@@ -1,0 +1,42 @@
+1.WQTD number of unique job roles present in employee team
+
+SELECT COUNT(DISTINCT JOB)
+FROM EMP;
+
+2.WQTD no of employeed getting same salary
+
+SELECT COUNT(*),SAL
+FROM EMP
+GROUP BY SAL
+HAVING COUNT(*)>1;
+
+3.WQTD no of employeed getting same salary in same department
+
+SELECT COUNT(*),SAL,DEPTNO
+FROM EMP
+GROUP BY SAL,DEPTNO
+HAVING COUNT(*)>1;
+---------------------------------------------------------
+ORDER BY
+---------------------------------------------------------
+
+1.WQTD DETAILS OF THE EMPS BASED ON THEIR SALARY MAX TO MIN
+
+SELECT *
+FROM EMP
+ORDER BY SAL DESC;
+
+2.WQTD ENAME,JOB IF THE EMPLOYEES ARE WORKING AS CLERK OR SALESMAN AND ARRANGE THE RECORDS BASED ON THEIR ENAME IN 
+ALPHABETICAL ORDER
+
+SELECT ENAME,JOB 
+FROM EMP
+WHERE JOB IN ("CLERK","SALESMAN")
+ORDER BY ENAME ASC;
+
+
+
+
+
+
+
